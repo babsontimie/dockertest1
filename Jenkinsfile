@@ -5,7 +5,7 @@ pipeline{
     }
       stages{
         stage('Build'){
-          step {
+          steps{
            sh '''
                cat /etc/hosts
                 
@@ -13,7 +13,7 @@ pipeline{
         }
         }
         stage('Test'){
-          step{
+          steps{
            sh '''
                sudo updatedb
                 
@@ -21,7 +21,7 @@ pipeline{
           }
         }             
         stage('Deploy'){
-          step{
+          steps{
            sh '''
                pwd && ls -ltra
                 
