@@ -1,9 +1,9 @@
 pipeline{
     agent {
-        dockerContainer{
-           image 'ubuntu:latest'
+        
+           docker 'ubuntu:latest'
        }
-    }
+    
      option {
          newContainerPerStage()
      }
