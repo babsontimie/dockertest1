@@ -10,14 +10,14 @@ pipeline{
           steps{
            sh '''
                cat /etc/lsb-release
-                
+             printenv
                '''
         }
         }
         stage('Test'){
           steps{
            sh '''
-               cat /etc/lsb-release
+     printenv
                 
                '''
           }
