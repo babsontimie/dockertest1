@@ -1,13 +1,13 @@
 pipeline{
-    agent{
+    agent {
         dockerContainer{
            image 'ubuntu:latest'
        }
-    
+    }
      option {
          newContainerPerStage()
      }
-    }
+    
       stages{
         stage('Build'){
           steps{
