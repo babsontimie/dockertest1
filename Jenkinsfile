@@ -9,7 +9,7 @@ pipeline{
         stage('Build'){
           steps{
            sh '''
-               cat /etc/lsb-release
+
              printenv
                '''
         }
