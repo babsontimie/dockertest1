@@ -8,7 +8,7 @@ pipeline{
         stage('Build'){
           steps{
            sh '''
-               cat /etc/hosts
+               cat /etc/lsb-release
                 
                '''
         }
@@ -16,7 +16,7 @@ pipeline{
         stage('Test'){
           steps{
            sh '''
-               sudo updatedb
+               cat /etc/lsb-release
                 
                '''
           }
