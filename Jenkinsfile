@@ -1,9 +1,10 @@
 pipeline{
-    agent{
-        dockerContainer{
-            image 'ubuntu:latest'
-        }
-    }
+    agent any
+    //{
+//        dockerContainer{
+//            image 'ubuntu:latest'
+//        }
+//    }
       stages{
         stage('Build'){
           steps{
