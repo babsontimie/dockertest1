@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent
     {
         dockerContainer{
            image 'ubuntu:latest'
