@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        docker{image 'centos:centos7.9.2009'}
+        dockerContainer{image 'centos:centos7.9.2009'}
     }
       stages{
         stage('Build'){
