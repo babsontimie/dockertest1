@@ -5,22 +5,28 @@ pipeline{
     }
       stages{
         stage('Build'){
+          step {
            sh '''
                cat /etc/hosts
                 
                '''
         }
+        }
         stage('Test'){
+          step{
            sh '''
                sudo updatedb
                 
                '''
+          }
         }             
         stage('Deploy'){
+          step{
            sh '''
                pwd && ls -ltra
                 
                '''
+          }
         }
 
 
